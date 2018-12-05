@@ -44,7 +44,7 @@ Auxil is implemented to send emails to new users who sign up. This feature requi
 and add a new gmail address.
 
 ## Status
-Dec-05-2018: Moving project to being hosted via Github
+Dec-05-2018: Moved project to Github.
 
 We hope to continue iterating and adding more functionality to our web application as we have time.
 
