@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Comment
+{% endblock %}
+
+{% block main %}
+    <section class="container p-5">
+        <form action="/comment" method="POST">
+            <div class="form-group" name = select>
+                <label class="control-label" for="email">Email:</label>
+                <input autocomplete="off" class="form-control" name="email" placeholder="Email" type="text" required>
+            </div>
+            <div class="form-group" name = select>
+                <label class="control-label" for="comment">Comment about your experience volunteering?</label>
+                <p>
+                <textarea cols="135.5" rows="4" name="comment" required></textarea>
+                </p>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+        <br><br>
+    </section>
+{% endblock %}

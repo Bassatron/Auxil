@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apply
+{% endblock %}
+
+{% block main %}
+    <section class="container p-5">
+        <form action="/apply" method="post">
+            <div class="form-group">
+                <select class="form-control" name="organization">
+                    <option disabled selected value>Select an Organization</option>
+                    {% for x in organizations %}
+                        <option value = "{{ x.Name }}">{{ x.Name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group" name = select>
+                <label class="control-label" for="firstname">First Name:</label>
+                <input autocomplete="off" class="form-control" name="first" placeholder="First Name" type="text" required>
+            </div>
+            <div class="form-group" name = select>
+                <label class="control-label" for="lastname">Last Name:</label>
+                <input autocomplete="off" class="form-control" name="last" placeholder="Last Name" type="text" required>
+            </div>
+            <div class="form-group" name = select>
+                <label class="control-label" for="email">Email:</label>
+                <input autocomplete="off" class="form-control" name="username" placeholder="Email" type="text" required>
+            </div>
+            <div class="form-group" name = select>
+                <label class="control-label" for="reason">Why do you want to volunteer for this organization?</label>
+                <p>
+                <textarea cols="100" rows="4" name="reason" required></textarea>
+                </p>
+            </div>
+            <div class="form-group" name = select>
+            <div id="wrapper" name = choice required>
+                <label for="night">Do you want to volunteer at night?</label>
+                <p>
+                <input type="radio" name="night" >Yes</input>
+                </p>
+                <p>
+                <input type="radio" name="night">No</input>
+                </p>
+            </div>
+            <div id="wrapper1" name = choice required>
+                <label for="day">Do you want to volunteer during the day?</label>
+                <p>
+                <input type="radio" name="day" >Yes</input>
+                </p>
+                <p>
+                <input type="radio" name="day">No</input>
+                </p>
+            </div>
+            <div id="wrapper2" name = choice required>
+                <label for="weekdays">Do you want to volunteer on weekdays?</label>
+                <p>
+                <input type="radio" name="weekdays" >Yes</input>
+                </p>
+                <p>
+                <input type="radio" name="weekdays">No</input>
+                </p>
+            </div>
+            <div id="wrapper3">
+                <label for="weekends">Do you want to volunteer on weekends?</label>
+                <p>
+                <input type="radio" name="weekends" >Yes</input>
+                </p>
+                <p>
+                <input type="radio" name="weekends">No</input>
+                </p>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+        <br><br>
+    </section>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <section class="container p-5" style="margin-left:30%">
+        <img alt="{{ top }}" class="border" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://i.imgflip.com/1i2k9a.jpg" title="{{ top }}">
+    </section>
+
+{% endblock %}

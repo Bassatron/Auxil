@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search Results
+{% endblock %}
+
+{% block main %}
+    <section class="container p-5">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Organization</th>
+                    <th>Location</th>
+                    <th>Zip Code</th>
+                    <th>Website</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="4"> </td>
+                </tr>
+            </tfoot>
+            <tbody>
+            {% for x in organizations %}
+                <tr>
+                    <td>{{ x.Name }}</td>
+                    <td>{{ x.Location }}</td>
+                    <td>{{ x.Zip }}</td>
+                    <td><a href = "{{ x.Website }}">{{ x.Website }}</a></td>
+                    <td>{{ x.Description}}</td>
+                </tr>
+            {% endfor %}
+            {% for x in organizations2 %}
+                <tr>
+                    <td>{{ x.Name }}</td>
+                    <td>{{ x.Location }}</td>
+                    <td>{{ x.Zip }}</td>
+                    <td><a href = "{{ x.Website }}">{{ x.Website }}</a></td>
+                    <td>{{ x.Description}}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Explore Map
+{% endblock %}
+
+{% block head %}
+    <script src="/static/map.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key={{ key | urlencode }}&callback=initMap">
+    </script>
+{% endblock %}
+
+{% block main %}
+    <div id="map"></div>
+    <div id="legend"><h3>Legend</h3></div>
+{% endblock %}

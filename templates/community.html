@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Forum
+{% endblock %}
+
+{% block main %}
+    <form action="/community" method="GET">
+        <section class="container p-5">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Comment</th>
+                        <th>Time-stamp</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"> </td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    {% for x in forum %}
+                        <tr>
+                            <td>{{ x.Email }}</td>
+                            <td>{{ x.Comment }}</td>
+                            <td>{{ x.Time }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Change Password
+{% endblock %}
+
+{% block main %}
+    <section class="container p-5">
+        <form action="/change" method="post" class="needs-validation" novalidate>
+            <div class="form-group">
+                <input class="form-control" name="oldpassword" placeholder="Old Password" type="password" required>
+                <div class="invalid-feedback">
+                    Required
+                </div>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="newpassword" placeholder="New Password" type="password" required>
+                <div class="invalid-feedback">
+                    New password must be at least 6 characters
+                </div>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="confirmation" placeholder="Confirm Password" type="password" required>
+                <div class="invalid-feedback">
+                    Required
+                </div>
+
+            </div>
+            <button class="btn btn-primary" type="submit">Change Password</button>
+        </form>
+     </section>
+
+     <script> // from bootstrap
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+    </script>
+
+{% endblock %}

@@ -1,0 +1,138 @@
+html *
+{
+    font-family: arial !important;
+}
+
+html, body, main
+{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#map
+{
+    height: 100vh;
+}
+
+#legend
+{
+    font-family: Arial, sans-serif;
+    background: #fff;
+    line-height: 40px;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #000;
+  }
+
+.navbar
+{
+    position: relative;
+}
+
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+
+    /* center logo */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
+/* colors for brand */
+nav .navbar-brand .white
+{
+    color: #fff;
+}
+
+nav #navbar .nav-link
+{
+    color: #fff;
+}
+
+
+.hero-image   /* help from codetheweb.blog */
+{
+    /* Sizing */
+    height: 75vh;
+    width: 100vw;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://agcdn-2mrybbgckm7omi0k.netdna-ssl.com/wp-content/uploads/2017/06/alphagamma-3-reasons-why-helping-people-is-not-always-good-for-business-entrepreneurship.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text
+{
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1
+{
+    font-size: 72px;
+}
+
+#index-form
+{
+    margin-top: 2%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+#input
+{
+    width: 100%;
+    height: 50px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    font-size: 26px;
+    background-color: white;
+    background-image: url('../static/search-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 50px;
+}
+
+.btn-blue
+{
+    background-color: #537fbe;
+    color: white;
+    width: 75%;
+    height: 100%;
+    font-size: 22px;
+}
+
+.footer
+{
+    position: absolute;
+    width: 100%;
+    height: 60px;   /* Height of the footer */
+    background:#D3D3D3;
+    position: fixed;
+    padding-top: 10px;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    bottom: 0pt;
+    left: 0pt;
+    text-align: center;
+}
+
+app
+{
+    text-align: center;
+    line-height: 1.8;
+    word-spacing: 10px;
+    color: rgba(201, 76, 76, 0.6);
+}
+
