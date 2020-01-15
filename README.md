@@ -35,6 +35,7 @@ For those who want to make changes to the Auxil project, all of our code is comp
 
 ## Status
 Jan-15-2020: Updated project functionality to new dependencies.
+
 Dec-05-2018: Moved project to Github.
 
 We hope to continue iterating and adding more functionality to our web application as we have time.
