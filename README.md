@@ -1,7 +1,10 @@
 # AUXIL VOLUNTEERING
 
 ## Description
-Auxil is a web application that connects people with volunteering opportunities near them. Using location data paired with a database of charities/non-profits with volunteering opportunities, our web application shows you where you can volunteer, and redirects you to the organizations sign up page. 
+Auxil is a web application that connects people with volunteering opportunities near them. Using location data paired with a database of charities/non-profits with volunteering opportunities, our web application shows you where you can volunteer, and redirects you to the organizations sign up page.
+
+## Web Application Demo
+
 
 ## How To Get Started With The Web Application
 In order to view and use the Auxil web application, follow the steps below.
