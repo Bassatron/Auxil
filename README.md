@@ -5,8 +5,11 @@ Auxil is a web application that connects people with volunteering opportunities.
 ## How To Use Web Application Demo
 In order to view and use the Auxil web application, follow the steps below.
 1. Clone the github repository to your local device
-you need to open the auxil folder, and run flask. Because the application is hosted via
-flask, you will need to run a local server which is accessable via cs50.io
+2. Install the required libraries and dependencies at the top of the app.py file
+3. Navigate to where you cloned the repository
+4. From the command line, type: `flask run`
+5. Open web browser and navigate to "https://localhost:5000"
+
 
 ## Usage
 Once you arrive at the Auxil homepage, you will have limited access to the web app's features. From the homepage you will be able to
