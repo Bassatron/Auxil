@@ -1,6 +1,6 @@
 import os
 
-from cs50 import SQL
+import sqlite3
 from datetime import datetime
 from flask import Flask, flash, jsonify, redirect, render_template, request, session, url_for
 from flask_session import Session
@@ -37,7 +37,8 @@ Session(app)
 
 
 # Configure CS50 Library to use SQLite database
-db = SQL("sqlite:///auxil.db")
+database = sqlite3.connect("auxil.db")
+db = database.cursor()
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -66,7 +67,7 @@ def index():
 
 
 @app.route("/explore")
-@login_required
+# @login_required
 def explore():
     """Explore a map"""
 
